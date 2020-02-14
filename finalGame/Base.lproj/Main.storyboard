@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="p7B-VD-VDY">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="vMl-Sy-0sa">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="p7B-VD-VDY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gIv-7c-5iT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0x-hH-zjU">
+                                <rect key="frame" x="120" y="501" width="174" height="74"/>
+                                <color key="backgroundColor" red="0.4478545189" green="0.710702002" blue="0.27456924319999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="T92-mv-Rl7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="38"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="0.75802044449999995" green="0.87312619049999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="bL3-0o-Na1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Claim it" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kuz-Xe-C5V">
+                                <rect key="frame" x="69" y="121" width="276" height="91"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="91" id="Mbn-44-DEb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="60"/>
+                                <color key="textColor" red="0.75802044449999995" green="0.87312619049999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.13340923190116882" green="0.18372729420661926" blue="0.2479134202003479" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kuz-Xe-C5V" firstAttribute="centerX" secondItem="gIv-7c-5iT" secondAttribute="centerX" id="Cv1-KZ-beD"/>
+                            <constraint firstItem="kuz-Xe-C5V" firstAttribute="leading" secondItem="9lH-mt-cA2" secondAttribute="leading" constant="69" id="G5s-kp-xoP"/>
+                            <constraint firstItem="i0x-hH-zjU" firstAttribute="centerX" secondItem="kuz-Xe-C5V" secondAttribute="centerX" id="LOC-bT-rZQ"/>
+                            <constraint firstItem="kuz-Xe-C5V" firstAttribute="top" secondItem="9lH-mt-cA2" secondAttribute="top" constant="121" id="R3t-NL-OZI"/>
+                            <constraint firstItem="9lH-mt-cA2" firstAttribute="bottom" secondItem="i0x-hH-zjU" secondAttribute="bottom" constant="161" id="dSq-AR-iUO"/>
+                            <constraint firstItem="i0x-hH-zjU" firstAttribute="leading" secondItem="9lH-mt-cA2" secondAttribute="leading" constant="120" id="ve6-9c-lhV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9lH-mt-cA2"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="T28-Co-gHT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V13-1n-rBa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-709.60000000000002" y="27.436281859070466"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="finalGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y6m-Av-ZQc" customClass="GameView" customModule="finalGame" customModuleProvider="target">
+                                <rect key="frame" x="8" y="169" width="398" height="398"/>
+                                <color key="backgroundColor" red="0.75802044449999995" green="0.87312619049999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Y6m-Av-ZQc" secondAttribute="height" multiplier="1:1" id="Rsd-x3-fO0"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="9Qf-k8-K8W" appends="YES" id="7Pf-OG-cLR"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQF-te-iwd">
+                                <rect key="frame" x="58" y="64" width="73" height="44"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
+                                <color key="textColor" red="0.4478545189" green="0.710702002" blue="0.27456924319999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOV-C5-f6U">
+                                <rect key="frame" x="58" y="23" width="73" height="33"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                <color key="textColor" red="0.75802044449999995" green="0.87312619049999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7z-Cs-u9v">
+                                <rect key="frame" x="275" y="23" width="94" height="33"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                <color key="textColor" red="0.75802044449999995" green="0.87312619049999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7a-K8-C89">
+                                <rect key="frame" x="293" y="63" width="60" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="OuU-Og-MVy"/>
+                                    <constraint firstAttribute="width" constant="60" id="Sx6-Ko-OcZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
+                                <color key="textColor" red="0.95960766077041626" green="0.69037002325057983" blue="0.22951692342758179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+0.5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQS-lx-SUN" userLabel="Adjustment">
+                                <rect key="frame" x="150" y="599" width="114" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="9hi-VU-nch"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="65"/>
+                                <color key="textColor" red="0.95960766080000004" green="0.69037002329999997" blue="0.22951692339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.13707888126373291" green="0.1879916787147522" blue="0.25566783547401428" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aOV-C5-f6U" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="23" id="3kx-Jj-PNd"/>
+                            <constraint firstItem="aOV-C5-f6U" firstAttribute="centerX" secondItem="kQF-te-iwd" secondAttribute="centerX" id="9AL-vF-tAj"/>
+                            <constraint firstItem="Y6m-Av-ZQc" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Egs-YB-0h7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SQS-lx-SUN" secondAttribute="bottom" constant="32" id="FPq-58-nHt"/>
+                            <constraint firstItem="SQS-lx-SUN" firstAttribute="centerX" secondItem="Y6m-Av-ZQc" secondAttribute="centerX" id="GoG-9u-kEc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D7a-K8-C89" secondAttribute="trailing" constant="61" id="HPe-IG-gMb"/>
+                            <constraint firstItem="R7z-Cs-u9v" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="aOV-C5-f6U" secondAttribute="trailing" constant="8" symbolic="YES" id="M73-eU-76t"/>
+                            <constraint firstItem="D7a-K8-C89" firstAttribute="top" secondItem="R7z-Cs-u9v" secondAttribute="bottom" constant="7" id="SRN-vJ-tZv"/>
+                            <constraint firstItem="SQS-lx-SUN" firstAttribute="top" secondItem="Y6m-Av-ZQc" secondAttribute="bottom" constant="32" id="UuP-Zc-7l4"/>
+                            <constraint firstItem="kQF-te-iwd" firstAttribute="top" secondItem="aOV-C5-f6U" secondAttribute="bottom" constant="8" symbolic="YES" id="XkN-3Q-J1p"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Y6m-Av-ZQc" secondAttribute="trailing" constant="8" id="ZY0-fT-YQL"/>
+                            <constraint firstItem="Y6m-Av-ZQc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="b6S-oS-EMm"/>
+                            <constraint firstItem="aOV-C5-f6U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="58" id="eNe-D2-cKV"/>
+                            <constraint firstItem="D7a-K8-C89" firstAttribute="centerX" secondItem="R7z-Cs-u9v" secondAttribute="centerX" constant="1" id="hUM-D8-etn"/>
+                            <constraint firstItem="aOV-C5-f6U" firstAttribute="baseline" secondItem="R7z-Cs-u9v" secondAttribute="baseline" id="o50-68-yDc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="R7z-Cs-u9v" secondAttribute="trailing" constant="45" id="qYc-hD-QaE"/>
+                            <constraint firstItem="Y6m-Av-ZQc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="tQ8-Yo-zOB"/>
+                            <constraint firstItem="aOV-C5-f6U" firstAttribute="leading" secondItem="kQF-te-iwd" secondAttribute="leading" id="vff-FZ-ely"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dqZ-Zw-NO5"/>
+                    <connections>
+                        <outlet property="adjustmentLabel" destination="SQS-lx-SUN" id="wea-ac-nch"/>
+                        <outlet property="scoreLabel" destination="D7a-K8-C89" id="UzR-60-fG0"/>
+                        <outlet property="timerLabel" destination="kQF-te-iwd" id="EFC-6v-PaL"/>
+                        <segue destination="NkK-CR-Xbx" kind="showDetail" identifier="gameOverSegue" id="1y2-cS-ney"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="9Qf-k8-K8W">
+                    <connections>
+                        <action selector="handleTap:" destination="Y6m-Av-ZQc" id="1sl-Jz-xD9"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="27.436281859070466"/>
+        </scene>
+        <!--GameOver-->
+        <scene sceneID="a0B-B8-NP6">
+            <objects>
+                <viewController title="GameOver" modalPresentationStyle="fullScreen" id="NkK-CR-Xbx" customClass="GameOverViewController" customModule="finalGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uXL-0y-dEv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Over" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsz-CX-A7X">
+                                <rect key="frame" x="77.666666666666686" y="145" width="259" height="66"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="60"/>
+                                <color key="textColor" red="0.75802044449999995" green="0.87312619049999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="plu-ZC-fXW">
+                                <rect key="frame" x="145" y="273" width="124" height="33"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                <color key="textColor" red="0.75802044449999995" green="0.87312619049999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYR-Hh-MRo">
+                                <rect key="frame" x="160.66666666666666" y="388" width="93" height="33"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                <color key="textColor" red="0.75802044449999995" green="0.87312619049999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnX-cP-joM">
+                                <rect key="frame" x="195.66666666666666" y="314" width="23" height="44"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
+                                <color key="textColor" red="0.4478545189" green="0.710702002" blue="0.27456924319999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bER-vH-WGl">
+                                <rect key="frame" x="195.66666666666666" y="429" width="23" height="44"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
+                                <color key="textColor" red="0.95960766080000004" green="0.69037002329999997" blue="0.22951692339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uuD-Ab-c6T">
+                                <rect key="frame" x="127.66666666666669" y="575" width="159" height="54"/>
+                                <color key="backgroundColor" red="0.4478545189" green="0.710702002" blue="0.27456924319999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="38"/>
+                                <state key="normal" title="New Game">
+                                    <color key="titleColor" red="0.75802044449999995" green="0.87312619049999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="p7B-VD-VDY" kind="show" id="nGd-il-fR2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.13797760009765625" green="0.19175845384597778" blue="0.25951257348060608" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cnX-cP-joM" firstAttribute="centerX" secondItem="uuD-Ab-c6T" secondAttribute="centerX" id="0Hf-fh-1Jb"/>
+                            <constraint firstItem="bER-vH-WGl" firstAttribute="top" secondItem="uYR-Hh-MRo" secondAttribute="bottom" constant="8" symbolic="YES" id="172-ZQ-j0b"/>
+                            <constraint firstItem="dsz-CX-A7X" firstAttribute="top" secondItem="w7F-e0-0Ma" secondAttribute="top" constant="145" id="3EA-GH-Lhs"/>
+                            <constraint firstItem="uYR-Hh-MRo" firstAttribute="top" secondItem="cnX-cP-joM" secondAttribute="bottom" constant="30" id="Bxa-cd-kXK"/>
+                            <constraint firstItem="cnX-cP-joM" firstAttribute="centerX" secondItem="uYR-Hh-MRo" secondAttribute="centerX" id="PLv-WK-uOZ"/>
+                            <constraint firstItem="cnX-cP-joM" firstAttribute="centerX" secondItem="plu-ZC-fXW" secondAttribute="centerX" id="VQw-Sc-vH1"/>
+                            <constraint firstItem="cnX-cP-joM" firstAttribute="centerX" secondItem="uXL-0y-dEv" secondAttribute="centerX" id="aHv-3C-ErG"/>
+                            <constraint firstItem="bER-vH-WGl" firstAttribute="centerX" secondItem="w7F-e0-0Ma" secondAttribute="centerX" id="bpf-Zr-TPi"/>
+                            <constraint firstItem="w7F-e0-0Ma" firstAttribute="bottom" secondItem="uuD-Ab-c6T" secondAttribute="bottom" constant="107" id="lg5-oF-KJk"/>
+                            <constraint firstItem="cnX-cP-joM" firstAttribute="top" secondItem="plu-ZC-fXW" secondAttribute="bottom" constant="8" symbolic="YES" id="qkJ-v6-thH"/>
+                            <constraint firstItem="cnX-cP-joM" firstAttribute="centerX" secondItem="dsz-CX-A7X" secondAttribute="centerX" id="wsx-Oq-XAG"/>
+                            <constraint firstItem="cnX-cP-joM" firstAttribute="top" secondItem="uXL-0y-dEv" secondAttribute="top" constant="314" id="zUQ-Ea-Yvw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="w7F-e0-0Ma"/>
+                    </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="bER-vH-WGl" id="BN0-14-iyE"/>
+                        <outlet property="totalTimeLabel" destination="cnX-cP-joM" id="nSf-fa-xCd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k1P-o2-yHM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="758" y="27"/>
+        </scene>
+    </scenes>
+</document>
